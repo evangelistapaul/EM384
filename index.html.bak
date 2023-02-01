@@ -1,10 +1,11 @@
 <html>
 <head>
-<TITLE> EM384 Block 4 </TITLE>
+<TITLE> EM384 AY23-2 Course Material </TITLE>
 </head>
 <body>
-<H1>Monte Carlo Simulation with Python</H1>
-<P> <a href="~/L30_IntroToPython_EM384.html">Lesson 30 Introduction to Python </a></P>
+This website will serve as a simple container to distribute material in EM384 common to all students.  This will include homeworks, supplemental reading material, and markdown to support python lessons.  
+<H1>Homework 1 (due </H1>
+<P> <a href="~/EM384 AT23-2 Homework 1.pdf">Lesson 30 Introduction to Python </a></P>
 <P> This is the second paragraph.</P>
 </body>
 </html>
