@@ -50,27 +50,22 @@ simple_hist(arrivals,25,'Histogram of Arrivals')
 
 #d)
 x = np.linspace(10,50,1000)
-y = stats.poisson.cdf(x,mu=30)
-simple_plot(x,y,'Arrivals','CDF of number of bus arrivals')
+ECDF_function = ECDF(arrivals)
+y = ECDF_function(x)
+simple_plot(x,y,'Arrivals','CDF and ECDF of arrivals')
 
 #e)
-ECDF_function = ECDF(arrivals)
-y2 = ECDF_function(x)
-simple_two_plot(x,y,y2,
-                'CDF','ECDF','x','CDF and ECDF of arrivals')
-
-#f)
 p = ECDF_function(25)
 print('The probability of 25 or fewer arrivals is',p)
 
-#g)
+#f)
 p = ECDF_function(22) - ECDF_function(21)
 print('The probability of exactly 22 arrivals is',p)
 
 #Problem 2: Mr Cookie
 #a)
 profit = []
-for i in range(0,10000):
+for i in range(0,100000):
     brownie_demand = np.random.randint(200,250)
     cookie_demand = np.random.randint(550,650)
     brownie_wholesale = np.random.rand()*(240-220)+220
